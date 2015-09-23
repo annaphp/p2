@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  color:#3E3E3E;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 120%;
+  height: auto;
+}
+
+h1 {
+  padding:10px;
+}
+
+.pswrd {
+  background-color: #BFDFFF;
+  width: auto;
+  padding:10px;
+  color:red;
+  font-size: 120%;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.container {
+  background-color: #FFCC66;
+  width: 70%;
+  min-width: 700px;
+  margin: auto;
+}
+
+input {
+    height: 20px;
+    width: 30px;
+    margin: auto;
+    border-radius: 5px;
+    border-style: solid;
+    display:block;
+  }
+
+label {
+    display: block;
+    margin: 10px;
+}
+
+.submit {
+    height: auto;
+    width: auto;
+    font-size: 150%;
+    background-color: white;
+    color: red;
+    padding:10px;
+    text-align: center;
+    border-radius: 5px;
+}
