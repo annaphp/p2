@@ -16,7 +16,8 @@ ini_set('display_errors', 1);
 		<h1> xkcd Password Generator</h1>
 		<p class = 'pswrd'>
 			<?php
-			if(!array_key_exists('spc_char',$_POST) && !array_key_exists('number',$_POST)){
+			if(sizeof($_POST)>1 || !$_POST==NULL){
+			if(! array_key_exists('spc_char',$_POST) && !array_key_exists('number',$_POST)){
 				echo generate_password($_POST["words_num"],NULL,NULL);
 			}elseif (!array_key_exists('spc_char',$_POST)) {
 				echo generate_password($_POST["words_num"],NULL,$_POST["number"]);
@@ -25,6 +26,7 @@ ini_set('display_errors', 1);
 			}else {
 				echo generate_password($_POST["words_num"],$_POST["spc_char"],$_POST["number"]);
 			}
+		}
 			?>
 		</p>
 		<form method ='POST' action='index.php'>
