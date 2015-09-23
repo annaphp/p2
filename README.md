@@ -9,7 +9,7 @@ password by randomly selecting 0 to 9 words, 1 special character and
 the generated password.
 
 ## Demo
-< >
+<https://youtu.be/ikopY-TtIE8>
 
 ## Details for teaching team
 The file words.txt was used to generate a words list.
